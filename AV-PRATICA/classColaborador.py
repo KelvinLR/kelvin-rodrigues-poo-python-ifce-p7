@@ -15,6 +15,11 @@ class Colaborador:
         self.salarioAtual = salarioAtual
         self.movimentos = []
 
+    # QUESTAO 4    
+    def inserirMovimentosColab(self, mov):
+        if type(mov) == MovimentoFolha:
+            self.movimentos.append(mov)
+            
     # QUESTAO 9
     def calcularSalario(self):
         totalProventos = 0.0
