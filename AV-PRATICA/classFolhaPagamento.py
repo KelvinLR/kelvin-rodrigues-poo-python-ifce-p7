@@ -11,6 +11,11 @@ class FolhaPagamento:
         self.ano = ano
         self.movimentos = []
         self.colaboradores = []
+        
+    # QUESTAO 4
+    def inserirMovimentos(self, mov):
+        if type(mov) == MovimentoFolha:
+            self.movimentos.append(mov)
 
     # QUESTAO 8
     def calcularFolha(self):
@@ -26,11 +31,6 @@ class FolhaPagamento:
 
         totalPagamento = (totalSalarios + self.totalProventos) - self.totalDescontos
         print('Total de Salários = {} Total de Proventos = {} Total de Descontos = {} Total a Pagar = {}'.format(totalSalarios, self.totalProventos, self.totalDescontos, totalPagamento))
-
-
-    def inserirMovimentos(self, mov):
-        if type(mov) == MovimentoFolha:
-            self.movimentos.append(mov)
 
     def inserirColaboradores(self, colaborador : Colaborador):
         self.colaboradores.append(colaborador)
