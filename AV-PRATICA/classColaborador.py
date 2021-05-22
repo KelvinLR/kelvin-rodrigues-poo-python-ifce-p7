@@ -36,6 +36,4 @@ class Colaborador:
         print('Codigo: {} Nome: {}\nSalário: {} Total Proventos: {} Total Descontos: {} Valor Liquido a Receber: {}'.format(
             self.codigo, self.nome, self.salarioAtual, totalProventos, totalDescontos, valorLiquido))
 
-    def inserirMovimentosColab(self, mov):
-        if type(mov) == MovimentoFolha:
-            self.movimentos.append(mov)
+  
