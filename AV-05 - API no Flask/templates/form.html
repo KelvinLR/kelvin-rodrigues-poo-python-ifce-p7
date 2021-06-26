@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRABALHO FLASK</title>
+    <style>
+
+        * {
+            background-color: rgb(170, 156, 170);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-shadow: 0.1em 0.1em 0.2em black;
+            color: greenyellow;
+        }
+
+        .input {
+            background-color: white;
+        }
+
+        #btn {
+            background-color: aqua;
+        }
+
+        #btn:hover {
+            font-size: 16px;
+            transition: 1s;
+        }
+
+        #table2 {
+            margin: auto;
+        }
+        #table1 {
+            border-color: red;
+            margin: auto;
+        }
+        
+        .tit {
+            font-size: larger;
+            background-color: yellow;
+        }
+
+        .dsc {
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <table id="table2" border="1">
+        <tr>
+            <td id="cont">
+                <h1>Seja bem-vindo</h1>
+                <h3>Insira seus Dados</h3>
+                <form method="GET, POST">
+                    <div>
+                        <label for="">Nome</label>
+                        <input type="text" placeholder='entre com seu nome' name="'_nome'" class="input">
+                    </div>
+                    <div>
+                        <label for="">Código</label>
+                        <input type="text" placeholder='entre com seu codigo' name="'_codigo'" class="input">
+                    </div>
+                    <div>
+                        <br>
+                        <input type="submit" value="Entrar" id="btn">
+                    </div>
+                </form>
+                <table id= 'table1' border="1">
+                    <br>
+                    <tr>
+                        <td class="tit">DISCIPLINA:</td>
+                        <td class="dsc">Programação Orientada ao Objeto</td>
+                    </tr>
+                    <tr>
+                        <td class="tit">ALUNO:</td>
+                        <td class="dsc">Kelvin de Lima Rodrigues</td>
+                    </tr>
+                    <tr>
+                        <td class="tit">TURMA:</td>
+                        <td class="dsc">P7 de Informática</td>
+                    </tr>
+                    <tr>
+                        <td class="tit">PROFESSOR:</td>
+                        <td class="dsc">Ricardo Duarte Taveira</td>
+                    </tr>
+                </table>
+                <img src="static/img/emojo.png" alt="">
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
